@@ -16,7 +16,7 @@
 
 body{
     font-family: "Pretendard", sans-serif;
-    background:#fafafa;
+    background:linear-gradient(135deg,#eef6ff,#dbeafe,#f8fbff);
     color:#222;
     line-height:1.8;
 }
@@ -89,16 +89,24 @@ section{
 }
 
 .card{
-    background:white;
+    background:rgba(255,255,255,0.9);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+
     padding:30px;
     border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+    border:1px solid rgba(255,255,255,.5);
+
+    box-shadow:0 10px 25px rgba(70,120,255,.12);
+
     margin-bottom:30px;
-    transition:.3s;
+    transition:0.3s;
 }
 
 .card:hover{
-    transform:translateY(-5px);
+    transform:translateY(-6px);
+    box-shadow:0 16px 35px rgba(70,120,255,.18);
 }
 
 .card h3{
