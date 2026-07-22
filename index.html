@@ -1,94 +1,325 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>My Introduction</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>조채윤 | PM Portfolio</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-    }
+<style>
 
-    .container {
-      max-width: 800px;
-      margin: 60px auto;
-      background: #fff;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
 
-    h1 {
-      margin-bottom: 5px;
-    }
+body{
+    font-family: "Pretendard", sans-serif;
+    background:#fafafa;
+    color:#222;
+    line-height:1.8;
+}
 
-    h2 {
-      margin-top: 35px;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 8px;
-    }
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    z-index:100;
+}
 
-    .tag {
-      display: inline-block;
-      background: #efefef;
-      padding: 6px 12px;
-      border-radius: 20px;
-      margin: 5px;
-    }
+header h2{
+    font-size:20px;
+}
 
-    a {
-      color: #0078ff;
-      text-decoration: none;
-    }
-  </style>
+nav a{
+    text-decoration:none;
+    color:#555;
+    margin-left:25px;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#000;
+}
+
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:120px 20px;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero h3{
+    color:#777;
+    margin-bottom:30px;
+}
+
+.hero p{
+    max-width:650px;
+    font-size:18px;
+}
+
+.title{
+    font-size:34px;
+    margin-bottom:40px;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+    margin-bottom:30px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#555;
+}
+
+.tag{
+    display:inline-block;
+    background:#efefef;
+    padding:8px 15px;
+    border-radius:30px;
+    margin:8px;
+}
+
+footer{
+    text-align:center;
+    padding:60px;
+    color:#888;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:40px;
+}
+
+.about{
+    grid-template-columns:1fr;
+}
+
+header{
+    flex-direction:column;
+    gap:10px;
+}
+
+}
+
+</style>
+
 </head>
-
 <body>
 
-<div class="container">
+<header>
 
-  <h1>조채윤</h1>
-  <p>문제의 본질을 놓치지 않고, 실행으로 옮기는 사람입니다.</p>
+<h2>조채윤</h2>
 
-  <h2>🙋 About Me</h2>
-  <p>
-    벤처중소기업학과 4학년에 재학 중이며
-    서비스 기획과 마케팅 분야에 관심을 가지고 있습니다.
-    새로운 환경에서도 필요한 정보를 스스로 찾아 실행하며,
-    사용자의 입장에서 문제를 해결하는 것을 좋아합니다.
-  </p>
+<nav>
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
 
-  <h2>📌 Experience</h2>
-  <ul>
-    <li>경영대학 학생회 복지국장</li>
-    <li>제휴사업 7개 → 12개 확대</li>
-    <li>농심 협찬 유치 및 행사 운영</li>
-    <li>체코 교환학생</li>
-  </ul>
+</header>
 
-  <h2>💻 Skills</h2>
+<section class="hero">
 
-  <span class="tag">Notion</span>
-  <span class="tag">AdobeIllustrator</span>
+<h1>안녕하세요,<br>조채윤입니다.</h1>
 
+<h3>Problem Finder · Execution-Oriented PM</h3>
 
-  <h2>📧 Contact</h2>
+<p>
+사용자의 문제를 발견하고,
+아이디어를 실행으로 연결하는 과정을 좋아합니다.
+데이터와 사용자 경험을 기반으로 더 나은 서비스를 만드는 PM을 목표로 하고 있습니다.
+</p>
 
-  <p>
-    Email :
-    <a href="mailto:your@email.com">chochaeyoonn@gmail.com</a>
-  </p>
+</section>
 
-  <p>
-    GitHub :
-    <a href="#">https://github.com/your-id</a>
-  </p>
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="about">
+
+<div class="card">
+<h3>🎯 관심 분야</h3>
+
+<p>
+서비스 기획<br>
+Product Management<br>
+UX Thinking<br>
+AI 서비스
+</p>
 
 </div>
+
+<div class="card">
+
+<h3>💡 나를 한 문장으로</h3>
+
+<p>
+새로운 환경에서도 필요한 정보를 스스로 찾고,
+문제의 본질을 이해한 뒤 실행으로 연결하는 사람입니다.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2 class="title">Experience</h2>
+
+<div class="card">
+
+<h3>📌 학생회 제휴사업 확대</h3>
+
+<p>
+
+<strong>Problem</strong><br>
+음식점 중심의 제휴사업으로 학생들의 다양한 수요를 반영하지 못했습니다.
+
+<br><br>
+
+<strong>Action</strong><br>
+학생들이 자주 이용하는 카페와 스터디카페까지 제휴 범위를 확대했습니다.
+
+<br><br>
+
+<strong>Result</strong><br>
+제휴처 7개 → 12개 확대
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🌍 체코 교환학생</h3>
+
+<p>
+
+<strong>Problem</strong><br>
+비자, 학교 행정, 수강신청 등을 모두 직접 해결해야 했습니다.
+
+<br><br>
+
+<strong>Action</strong><br>
+영문 이메일을 통해 학교와 지속적으로 소통하며 필요한 정보를 정리했습니다.
+
+<br><br>
+
+<strong>Result</strong><br>
+교환학생 준비를 성공적으로 완료하고 다양한 환경에서 문제 해결 경험을 쌓았습니다.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🤝 농심 협찬 유치</h3>
+
+<p>
+
+<strong>Problem</strong><br>
+학우분들이 대동제에서 더 다양한 경험을 했으면 좋겠다는 의견이 다수 있었습니다.
+
+<br><br>
+
+<strong>Action</strong><br>
+기업에 직접 협찬을 제안하고 행사 운영 계획을 전달했습니다.
+
+<br><br>
+
+<strong>Result</strong><br>
+농심 협찬을 유치하여 행사 운영을 지원했습니다.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">Skills</h2>
+
+<span class="tag">AdobeIllustrator</span>
+<span class="tag">Notion</span>
+<span class="tag">SPSS</span>
+<span class="tag">Excel</span>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact</h2>
+
+<div class="card">
+
+<p>
+
+📧 chochaeyoonn@gmail.com
+
+<br><br>
+
+🐙 github.com/chaeyoon0415
+
+<br><br>
+
+📍 Seoul, Korea
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 CHAEYOON CHO
+
+</footer>
 
 </body>
 </html>
