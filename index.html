@@ -15,10 +15,12 @@
 }
 
 body{
-    font-family: "Pretendard", sans-serif;
-    background:linear-gradient(135deg,#eef6ff,#dbeafe,#f8fbff);
-    color:#222;
-    line-height:1.8;
+    background:linear-gradient(
+        180deg,
+        #eef6ff 0%,
+        #f8fbff 40%,
+        #ffffff 100%
+    );
 }
 
 header{
@@ -52,7 +54,7 @@ nav a:hover{
 section{
     max-width:1000px;
     margin:auto;
-    padding:120px 20px;
+    padding:70px 20px;
 }
 
 .hero{
@@ -89,21 +91,10 @@ section{
 }
 
 .card{
-    background:rgba(255,255,255,0.9);
-    backdrop-filter:blur(10px);
-    -webkit-backdrop-filter:blur(10px);
-
-    padding:30px;
-    border-radius:15px;
-
-    border:1px solid rgba(255,255,255,.5);
-
-    box-shadow:0 10px 25px rgba(70,120,255,.12);
-
-    margin-bottom:30px;
-    transition:0.3s;
+    background:white;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(37,99,235,.08);
 }
-
 .card:hover{
     transform:translateY(-6px);
     box-shadow:0 16px 35px rgba(70,120,255,.18);
